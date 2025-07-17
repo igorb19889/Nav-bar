@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex | css</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /*
+
+DESKTOP
+
+[2] [1 main] [3] 
+
+*/
+
+
+/* 
+MOBILE !!!
+
+[1 main] 
+[2] 
+[3] 
+
+*/
+
+
+/* Desktop 
+
+main axis start-----------------------------> end
+
+*/
+
+.news{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}/*
+
+DESKTOP
+
+[2] [1 main] [3] 
+
+*/
+
+
+/* 
+MOBILE !!!
+
+[1 main] 
+[2] 
+[3] 
+
+*/
+
+
+/* Desktop 
+
+main axis start-----------------------------> end
+
+*/
+
+.news{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    font-size: 23px;
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+p{
+    text-align: justify;
+    padding: 15px;
+    color: black;
+    border-bottom: 2px solid grey;
+    
+}
+
+
+.news article img{
+    width: 92%;
+    /* align-self: center; */
+}
+.news article{
+    margin: 5px 10px;
+    /* border: 2px solid red; */
+    width: 25%;
+    /* background-color: darkgrey; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news .main{
+    width: 50%;
+}
+
+.news .main + article{
+    order: -1;
+}
+
+
+.news .noutate{
+    text-align: center;
+    border: 1px solid white;
+    background-color:orange;
+    color: white;
+    text-shadow: 2px 1px 0.3px black;
+    line-height: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    display: block;
+}
+
+.news ul li{
+    list-style: none;
+    font-weight:bold;
+}
+
+.news ul .li{
+    text-align: center;
+}
+
+
+/* Mobile 
+
+main axis star
+            |
+            |
+            |
+            |
+            |
+            |
+            |
+            v 
+            end
+            
+*/
+
+@media(max-width:1240px){
+    .news{
+        width: 92%;
+        flex-direction: column;
+    }
+    .news article,
+    .news .main{
+        width: 100%;
+    }
+    .news .main{
+        order: -2;
+    }
+
+    .news ul .li{
+        display: block;
+        text-align: left;
+    }
+
+    .news .srcset{
+        text-align: center;
+    }
+}
+
+/* @media(max-width:800px){
+   .news .srcset{
+        width: 800px;
+        height: 500px;
+        text-align: center;
+    
+   } */
+
+
+/*
+
+DESKTOP
+
+[2] [1 main] [3] 
+
+*/
+
+
+/* 
+MOBILE !!!
+
+[1 main] 
+[2] 
+[3] 
+
+*/
+
+
+/* Desktop 
+
+main axis start-----------------------------> end
+
+*/
+
+.news{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    font-size: 23px;
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+p{
+    text-align: justify;
+    padding: 15px;
+    color: black;
+    border-bottom: 2px solid grey;
+    
+}
+
+
+.news article img{
+    width: 92%;
+    /* align-self: center; */
+}
+.news article{
+    margin: 5px 10px;
+    /* border: 2px solid red; */
+    width: 25%;
+    /* background-color: darkgrey; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news .main{
+    width: 50%;
+}
+
+.news .main + article{
+    order: -1;
+}
+
+
+.news .noutate{
+    text-align: center;
+    border: 1px solid white;
+    background-color:orange;
+    color: white;
+    text-shadow: 2px 1px 0.3px black;
+    line-height: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    display: block;
+}
+
+.news ul li{
+    list-style: none;
+    font-weight:bold;
+}
+
+.news ul .li{
+    text-align: center;
+}
+
+
+/* Mobile 
+
+main axis star
+            |
+            |
+            |
+            |
+            |
+            |
+            |
+            v 
+            end
+            
+*/
+
+@media(max-width:1240px){
+    .news{
+        width: 92%;
+        flex-direction: column;
+    }
+    .news article,
+    .news .main{
+        width: 100%;
+    }
+    .news .main{
+        order: -2;
+    }
+
+    .news ul .li{
+        display: block;
+        text-align: left;
+    }
+
+    .news .srcset{
+        text-align: center;
+    }
+}
+
+
+
+
+a{
+    text-decoration: none;
+    font-size: 23px;
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+p{
+    text-align: justify;
+    padding: 15px;
+    color: black;
+    border-bottom: 1px solid lightgrey;
+    
+}
+
+
+.news article img{
+    width: 92%;
+    
+}
+.news article{
+    margin: 5px 10px;
+   
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news .main{
+    width: 50%;
+}
+
+.news .main + article{
+    order: -1;
+}
+
+
+.news .noutate{
+    text-align: center;
+    border: 1px solid white;
+    background-color:orange;
+    color: white;
+    text-shadow: 2px 1px 0.3px black;
+    line-height: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    display: block;
+}
+
+.news ul li{
+    list-style: none;
+    font-weight:bold;
+}
+
+.news ul .li{
+    text-align: center;
+}
+
+
+/* Mobile 
+
+main axis star
+            |
+            |
+            |
+            |
+            |
+            |
+            |
+            v 
+            end
+            
+*/
+
+@media(max-width:1240px){
+    .news{
+        width: 92%;
+        flex-direction: column;
+    }
+    .news article,
+    .news .main{
+        width: 100%;
+    }
+    .news .main{
+        order: -2;
+    }
+
+    .news ul .li{
+        display: block;
+        text-align: left;
+    }
+
+    .news .srcset{
+        text-align: center;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+
+<section class="news">
+
+    <article class="main">
+        <h1 class="noutate">News Nr1</h1>
+        <!-- 
+             HW2 : add semantic elements to IMG::DONE!!!
+        -->
+
+        <!-- 
+             HW3 : add picture tag element + media to adapt image 
+        -->
+
+    <picture class="srcset">
+        <source
+        srcset="https://fastly.picsum.photos/id/862/700/500.jpg?hmac=FSlPXubul-joHmFjx2Z9MAU52rDZAHMWEIhUaejfEHc"
+                media="(min-width:800px)">
+        <img src="foto-500x700.jpg" 
+        alt="picture">
+    </picture>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati fugiat voluptas ipsum nostrum corrupti sit. Porro recusandae dolore dicta magnam corrupti labore rem quae! Quasi illo laborum commodi minima earum sit ex repellendus dolorem eos, quo libero minus dolores?</p>
+        <p>Laboriosam mollitia illo et? Libero repellendus exercitationem quae suscipit ex reiciendis soluta! Obcaecati dolores perspiciatis doloremque repellendus quis, aspernatur sunt praesentium totam, vitae non odit similique repudiandae veritatis, veniam quo amet? Quidem quae dicta, et nisi laboriosam minus exercitationem labore?</p>
+<!-- 
+    HW1 : add semantic elements-de incercat de chimbat div si span:: DONE!!!
+-->
+        <ul>
+            <li class="li">Published on: 18:00</li>
+            <li class="li">Published by:<a href="#">Greg Antony</a></li>
+        </ul>
+        <!-- <div><span>Published on: </span>18:10 <br/>
+            <span>Published by: </span><a href="#">some author</a></div> -->
+    </article>
+
+
+
+
+    <article>
+        <h2 class="noutate">News Nr2</h2>
+        
+        <figure>
+            <img src="https://fastly.picsum.photos/id/667/400/500.jpg?hmac=OQG_8zCTGqNrbS0tfumC869wLIkjXdJeRgIAXHcNIyk" alt="">
+        </figure>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fuga earum eius totam error vel eum ea harum at, dolorum laudantium praesentium culpa commodi. At doloremque saepe hic, sint magnam praesentium quod sit possimus tempore temporibus ad expedita. Dignissimos, molestias!</p>
+        <p>Voluptatum, doloribus asperiores? Tempora, maxime, soluta totam suscipit repellat nobis natus deserunt illo veniam odit voluptates fugiat neque sed necessitatibus! Magni velit quibusdam cum! Eveniet quo, iure dolorum velit ab assumenda accusantium a debitis quis dignissimos nam aspernatur repellendus quas!</p>
+    
+        <ul>
+            <li>Published on: 18:30</li>
+            <li>Published by:<a href="#">Moris Dowson</a></li>
+        </ul>
+
+        <!-- <div"><span>Published on: </span>18:20 <br/>
+            <span>Published by: </span><a href="#">some author</a></div> -->
+     </article>
+
+
+
+    <article>
+        <h2 class="noutate">News Nr3</h2>
+        
+    <figure>
+        <img src="https://fastly.picsum.photos/id/780/400/500.jpg?hmac=QHmRGsjTAOV9pMlaX-o6rww78U4wpX8vfgyBgKUjQg4" alt="">
+    </figure>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, laborum aperiam iusto ducimus quas nam explicabo nulla repellendus facere, atque sapiente nobis tenetur ipsam labore odit sint voluptatibus odio omnis ab cupiditate. Officiis qui porro pariatur deleniti ut quae et.</p>
+        <p>Libero accusantium minus in cum quod commodi, iste, iure esse eveniet nisi dolore? Optio consectetur aspernatur ea maxime, quas repellat maiores modi minima fugiat reprehenderit laudantium, porro recusandae. Ea, amet dolores consequuntur quam sit voluptas quaerat ab ipsam unde. Laboriosam.</p>
+     
+        <ul>
+            <li>Published on: 19:00</li>
+            <li>Published by:<a href="#">Moris Rodger</a></li>
+        </ul>
+        <!-- <div"><span>Published on: </span>18:30 <br/>
+            <span>Published by: </span><a href="#">some author</a></div> -->
+    </article>
+
+
+</section>
+
+    
+</body>
+</html>
